@@ -1,0 +1,154 @@
+1. WaPP to check whether the given year is leap year or not
+2. WaPP to find and display the maximum of three given numbers
+3. WaPP to check the given number is prime number or not
+4. WaPP to print first n Fibonacci numbers
+5. An Organization has decided to provide salary hike to its empolyee based on their job. Employees can be in job levels 3, 4, or 5. Hike percentage based on the job levels are given below
+Job Level	Hike Percentage (Applicable on current salary)
+	3			15
+	4			7
+	5			5
+In case of invalid job level, consider hike percentage to be 0
+Given the current salary and the job level, write a python program to find and display the new salary of an employee.
+====
+UDF
+====
+6. WaPF factorial(num) which returns the factorial of a given number.
+7. WaPF is_pallindrome(num) that accepts an integer numb as argument and returns True if the num is pallindrome else returns False. Invke the functuion and based on return value print the output.
+8. WaPF check_amicable_numbers(num1, num2) tht accepts two numbers num1, num2 as arguments and returns True if the given pair of numbers are amicable numbers else return False. Invoke the function based on return value print the numbers are amicable numbers or not.
+num1 and num2 are said to be amicable numberds if sum of all the proper devisors (expect num1 itslef) or num1 is equal to num2 and sum of all the proper devisors of num2 (expect num2 itself) is equal to num1.
+9. WaPF right_shift(num,n) that takes two numbers num and n as arguments and returns value of the integer numb rotated ti the right by n posithions. Assume both the numbers are unsigned. Invike the function and print the return value.
+
+Hint: use >> binary operator to shift the bits
+Example :- num = 60, n=2, output =>15
+10. WaPF  check_strin_nunber(num) that accepts a positive integer as argument and returns True if the number if striing number else False.
+Invoke the function are based in return value print the number is strong number or not.
+A number is said to be string number, if the sum of factorial of each digit of the number is equal to the given number.
+e.g. 145 is a string number as 
+	1! =1
+	4! =24
+	5! = 120
+	sum of all these is 145
+
+=====
+Collections
+=====
+11. WaPF proper_division(num) which returns a list of all the proper divisors of the given number.
+	e.g. 220 = 1,2,4,5,10,11,20,22,44,55,110
+12. WaPF generate_fibonacci(n) to return a list of first n Fibonacci numbers
+13. WaPP to generate the next 15 leap years starting from a given year. Populate the leap years into a list and display the list.
+14. Given a string containing uppercase characters (A-Z), compress the string using Run Length encoding. Repetition of character has to be replaced by storing the length of that run.
+	WaPF encode(message) which performs the run length enocding for a given string and returns the run length encoded string.
+	e.g. message = > AAAABBBBCCCCCCCC output: 4A4B8C
+15. Represent a small bilingual (Engligh - Swedish) flossary given below as a Python dictionary
+{"merry":"god", "cristmas":"jul", "and":"och","happy":"gott","new":"nytt","year":ar"}
+and use it to translate your Cristmas wishes from English into Swedish.
+That is, WaPF translate(b_dict,list_words) that accepts the biligual dictionary and a list of English words ( your Chrismas wish) and returns a list of equivalent Swedish words.
+
+=====
+Built-in Functions and Libraries:
+=====
+16. WaPF, encrypt_sentence(msg) whihc accepts a message and encrypts it based on rules given below and returns the encrypted message.
+Words at odd position -> Reverse itWords at even position -> Rearrage the characters so that all consonants appear before the vowels and their order should not change.
+Note: Assume that the sentence would begin with a word and there will only a signle space between the words.
+Example: msg = the sun rises in the east. Op-> eht snu sesir ni eht stea
+
+17. WaPP tp find the number of characters present in the give string.
+18. WaPP to find the numbers of words present in the given sentence.
+19. WaPF words_count(sentence) to return a dictionary with the length of words as key and number words with such length as value.
+	e.g. sentence=> I love python and it so easy to learn
+		output=>(1:1, 4:2, 5:1, 3:1,2:3, 6:1}
+20. WaPF vowel_count(sentence) to return a dictionary with vowels, consonants, others as key and respective number of vowels, consonants, others characters as value.
+	e.g. sentence=> I love python and it so easy to learn
+	output{vowels:12, consonants:17, others:8}
+
+====
+File handeling
+====
+Trainees.txt "TraineeNumber:Name:Stream:Mark"
+
+T101:Nakul:OS:92
+T102:Stefan:Java:72
+T103:Sachin:OS:88
+T104:Karthik:MS:91
+T105:Preethi:Java:56
+T106:Kaviya:OS:95
+
+Using the above file, perform the following
+
+21. WaPP to print all the trainee names from the file
+22. WaPP program to read the detils of trainee who scored more than 90 marks and write their details in HPF.txt file
+23. WaPP to read the details of trainee from OS stream and write their details in os_stream.txt file
+24. WaPP to create a dictionary with trainee number as key and their mark as value and print the dictionary.
+
+=====
+Expection handling
+=====
+
+Create a python file with code given below. It contains a functuon that accepts a list of marks and returns the average marks.
+
+def find_average(mark_list):
+	total = 0
+	for i in range(0, len(mark_list)):
+		total+=marklist[i]
+	marks_avg=total/len(mark_list)
+	return marks_avg
+
+m_list=[1,2,3,4]
+print("Average marks:", find_average(m_list))
+
+On execution, the program will resulting in a error.
+
+25. Add code to handle the exception occuring in the code.
+26. Make the necessary correction in the programto remove the error.
+27. Make the followingchanges in the code, execute, observe the reults. Add code to handle the errors occuring in each case.
+	Initialize m_list as ["1",2,3,4]
+	Initialize m_list as []
+	Make the following change in the for loop statement
+	for i in range(0, len(mark_list)+1):
+
+=============
+MINI Project
+=============
+Easy Food Online is an application to be built using Python for the Easy Food Restaurant. This application allows a user to order food online from Easy Food Restaurant. This application also allows the user to choose particular food they neeed from the set of foods available in the restaurant and will calculate the discount based on the total bill amount.
+
+Description of the project:
+	1. Before starting the application, cerate a sample Order_Details.txt file with foloowing content:
+		O101:Madhan:biriyani#2:meals#1:306
+		O102:Divya:biriyani#1:120
+		O103:Karthik:veg-pizza#2, nonveg-pizza#1:270
+	format -> Orderid:name:orderedfood:billamount
+	2. Create a dictionary as shown below with food items available in restaurant as key and price of the food item as value.
+		food_price_dict = {"biriyani":120,"veg-pizza":90, "nonveg-pizza":120,"meals:100}
+	3. When the user runs the applicationit should prompt the user to enter the nameOnce the user enter the name, the application should check whether the name is valid or not
+		3a. User name is valid if it contains only upper or lower case alphabets or space.
+		3b. If the name entered by the user is not valid, then print an appropriate error message and ask the user to enter the name again.
+	4. Once the user name is fetched, applicatin should display all the food items available in the dictionary and their price. then it should prompt the user to enter the food they require and quantity.
+		4a. After the user enter the food name, application should check whether the food is available in the dictionary. If it is not available, then it should displa the error message. Else it should ask the user whether to add more food items.
+		4b. If the user wished to add more food item the same proecess should be repeated
+		4c. All the food items added by the user and their quanity shoud be added to a list.
+	5. After the food items and their quantities are added to the list, WaPF generate_order_id() and calculate_bill([food_list],[quantity_list])
+	6. The functionalities to be implemented by the above two functions are explained below
+		6a. generate_order_id():
+			6aa. this method should fetch the last order id from order_details.txt
+			6ab. then it should increament the order id by 1 and return the incremented order id
+			Example: if the last order id "O103", then this function should return "O104" 
+			6ac. if the file is empty, then return "O101"
+		6b. calculate_bill():
+			6ba. this method accepts three parameter: 
+			i) food_price_dict created in the beginning
+			ii) list of food items added by the user
+			iii) the corresponding quantity list
+			6bb. Calcutle the bill amount using the parameters passed
+			6bc. Return the calculate bill amount
+	7. to make the code modular and reusable, create the above two functions in functions.py file in the same directory and import the functions in the beginning.
+	8. After creatinf both functions and importing it, invoke the generate_order_id() and fetch the bew order_id
+	9. Invoke calculate_bill() by passing the food_proce_dict, food_item list and quantity list as parameters.
+	10. If the bill_amount fetched from previous step is more than 299 then provide a discount of 10%
+	11. Now update the new order details in order_details.txt file in the format following format:
+	orderId:username:food1#quanity,food2#quanity,so on:discountbillamount
+	12. Write the code blocks that might throw run time exception in a try block and use corresponding Exception class to hanfle those exceptions
+	Example: When we try to open the file Order_Details.txt, if the file doesn't exist, ten handle the exception nby using a FileNotFoundError class.
+	Similarly handle other kind of exceptions like ZeroDivisionError, ValueError etc. that might occur in the application, using appropriate exception classes.
+	Also create a default exceotion handler to hanfle unknow exceptions that might occur in the applicaiton.
+			
+			
